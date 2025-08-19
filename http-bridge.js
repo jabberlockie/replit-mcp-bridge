@@ -2,7 +2,7 @@ import { init, fs, exec, data, debug } from '@replit/extensions';
 
 class HTTPBridge {
     constructor() {
-        this.port = 3000;
+        this.port = 3002;
         this.routes = new Map();
         this.isRunning = false;
         this.setupRoutes();
@@ -221,7 +221,7 @@ class HTTPBridge {
                 const originalFetch = window.fetch;
                 
                 window.fetch = async function(url, options = {}) {
-                    if (typeof url === 'string' && url.startsWith('http://localhost:3000')) {
+                    if (typeof url === 'string' && url.startsWith('http://localhost:3002')) {
                         // Extract path from URL
                         const urlObj = new URL(url);
                         const path = urlObj.pathname;

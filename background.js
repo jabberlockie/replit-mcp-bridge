@@ -4,7 +4,7 @@ import { init, fs, exec, data, debug } from '@replit/extensions';
 class MCPBridge {
     constructor() {
         this.server = null;
-        this.port = 3000;
+        this.port = 3002;
         this.isRunning = false;
     }
 
