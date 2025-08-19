@@ -5,29 +5,42 @@
 1. A Replit account
 2. A Replit project/workspace where you want to install the extension
 
+## Repository
+
+**GitHub Repository**: https://github.com/jabberlockie/replit-mcp-bridge
+
 ## Installation Steps
 
-### Option 1: Direct Upload (Recommended)
+### Method 1: Import from GitHub (Recommended)
 
-1. **Create a new Replit project** or open an existing one
-2. **Upload all extension files** to your project root:
-   - `extension.json` (manifest)
-   - `background.html` & `background.js` (background service)
-   - `control.html` & `control.js` (control panel)
-   - `http-bridge.js` (HTTP server simulation)
-   - `icon.svg` (extension icon)
+1. **Open Replit** and go to https://replit.com
+2. **Create a new Repl** or open an existing workspace
+3. **Import from GitHub**:
+   - Click "Import from GitHub" 
+   - Enter: `https://github.com/jabberlockie/replit-mcp-bridge`
+   - Click "Import"
+4. **The extension will auto-deploy** when you open the workspace
 
-3. **Ensure files are served** from the root directory (they should be accessible at `/extension.json`, `/background.html`, etc.)
+### Method 2: Fork the Repository
 
-4. **Test the extension** by opening your workspace - the extension should auto-load
+1. **Fork the repository** on GitHub:
+   - Go to https://github.com/jabberlockie/replit-mcp-bridge
+   - Click "Fork" to create your own copy
+2. **Import your fork** into Replit using Method 1 steps
+3. **Make customizations** if needed
 
-### Option 2: Clone from Repository
+### Method 3: Manual Clone
 
-If you've pushed the extension to a Git repository:
+If you want to work with the code locally first:
 
-1. Clone or import the repository into your Replit workspace
-2. Make sure all files are in the root directory
-3. The extension will automatically be detected by Replit
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/jabberlockie/replit-mcp-bridge.git
+   cd replit-mcp-bridge
+   ```
+2. **Make any modifications** you need
+3. **Push to your own GitHub repository**
+4. **Import your repository** into Replit
 
 ## Verification
 
