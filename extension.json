@@ -1,0 +1,25 @@
+{
+  "name": "MCP Bridge",
+  "description": "Bridge extension for Replit MCP server integration",
+  "longDescription": "This extension provides a bridge between Replit workspaces and the Claude Code MCP server, allowing Claude to interact with your Replit projects.",
+  "scopes": [
+    {
+      "name": "read",
+      "reason": "Read files from the workspace for MCP operations"
+    },
+    {
+      "name": "write-exec",
+      "reason": "Write files and execute commands for MCP operations"
+    }
+  ],
+  "background": {
+    "page": "/background.html"
+  },
+  "tools": [
+    {
+      "name": "MCP Bridge Control",
+      "handler": "/control.html",
+      "icon": "/icon.svg"
+    }
+  ]
+}
